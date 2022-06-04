@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+.container{
+  width: 90%;
+  margin: auto;
+  padding: 25px 0;
+}
+
+#add_post_btn, .add_post button, .edit_con button{
+  border: none;
+  outline: none;
+  background-color: rgba(0, 95, 197, 1);
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  height: 55px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: 0.2s;
+  z-index: 2;
+  position: relative;
+}
+#add_post_btn:hover, .add_post button:hover, .edit_con button:hover{
+  background-color: rgba(0, 70, 144, 1);
+}
+#add_post_btn:focus, .add_post button:focus, .edit_con button:focus{
+  background-color: white;
+  color: rgba(0, 95, 197, 1);
+  border: 2px solid rgba(0, 95, 197, 0.30)
+}
+.add_post{
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 35px;
+  color: rgba(0, 95, 197, 1);
+  font-weight: 500;
+  font-size: 1.1rem;
+  height: 0;
+  overflow: hidden;
+  margin-top: -20px;
+  z-index: 1;
+  transition: 0.2s ease;
+}
+.add_post input,.add_post textarea, .edit_con input, .edit_con textarea{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  border: 2px solid rgba(0, 95, 197, 0.20);
+  border-radius: 5px;
+  width: 100%;
+  height: 55px;
+  outline: none;
+  transition: 0.2s;
+  padding: 10px;
+}
+.add_post input:focus , .add_post textarea:focus, .edit_con input:focus, .edit_con textarea:focus{
+  border: 2px solid rgba(0, 95, 197, 1);
+}
+.add_post textarea, .edit_con textarea{
+  height: 155px;
+  font-size: 1rem;
+}
+.add_post button {
+}
+.edit_post{
+  background-color: white;
+  color: white;
+  margin-top: 25px;
+  padding: 15px;
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.15);
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.edit_post .left_side h1{
+  color: royalblue;
+  font-size: 1.5rem;
+}
+.edit_post .left_side p{
+  color: dimgrey;
+}
+
+.edit_post .right_side{
+  height: auto;
+  width: 60px;
+}
+.edit_post .right_side button{
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s;
+  height: 40px;
+  margin-top: 5px;
+}
+.edit_post .right_side button[name=delete_btn]{
+  background-color: darkred;
+}
+
+.edit_post .right_side button[name=delete_btn]:focus{
+  background-color: white;
+  color: darkred;
+  border: 1.5px dashed darkred;
+}
+
+.edit_post .right_side button[name=edit_btn]{
+  background-color: darkgreen;
+}
+.edit_post .right_side button[name=edit_btn]:focus{
+  background-color: white;
+  color: darkgreen;
+  border: 1.5px dashed darkgreen;
+}
+.edit_post .right_side #show_post_btn{
+  background-color: midnightblue;
+}
+.edit_post .right_side #show_post_btn:focus{
+  background-color: white;
+  color: midnightblue;
+  border: 1.5px dashed midnightblue;
+}
+.edit_con_filter{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  backdrop-filter: brightness(0.20);
+  position: fixed;
+  background-color: transparent;
+  z-index: 5;
+  display: block;
+  transition: 0.5s;
+}
+.edit_con{
+  position: fixed;
+  background-color: transparent;
+  padding: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  background-color: white;
+  width: 90%;
+}
+.edit_con input{
+  display: block;
+}
+.edit_con label{
+  font-weight: 500;
+  color: dimgrey;
+}
+#close_edit_con{
+  background-color: darkred;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition: none;
+}
+#close_edit_con:hover{
+  opacity: 0.5;
+}
+.posts_h1{
+  width: 100%;
+  border-bottom: 2px dashed royalblue;
+  height: 12.5px;
+  margin-bottom: 45px;
+  opacity: 0.7;
+}
+.edit_posts #h1_1{
+  background-color: royalblue;
+  width: 70px;
+  padding: 5px;
+  font-size: 0.6rem;
+  text-align: center;
+  color: white;
+  border-radius: 100px;
+  margin: auto;
+} 

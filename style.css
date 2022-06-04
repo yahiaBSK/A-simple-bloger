@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+a{
+  text-decoration: none;
+  outline: none;
+  border:none;
+  color: rgba(11, 18, 91, 1);
+}
+.posts_container{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.post{
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.10);
+  margin-top: 20px;
+  border: 2px solid rgba(0, 95, 197, 0.50);
+  padding: 15px;
+}
+.post a{
+}
+.post a h1{
+  color: rgba(11, 18, 91, 1);
+  text-align: start;
+  padding: 15px 15px 0 15px;
+}
+.post a p{
+  text-align: start;
+  color: rgba(0, 95, 197, 1);
+  padding: 5px 15px 25px 15px;
+}
+
+#time{
+  color: rgba(0, 79, 252, 1);
+  font-weight: 700;
+  background-color: rgba(0, 93, 255, 0.10);
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 250px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+  .post{
+    width: 48%;
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+}
+
